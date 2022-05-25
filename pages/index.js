@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Footer } from '../Component/Footer'
-import { Mian } from '../Component/main'
+import { Mian } from '../Component/Main'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
