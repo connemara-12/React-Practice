@@ -20,8 +20,8 @@ const ITEMS = [
     href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app",
     title: "Deploy →",
     description: "Instantly deploy your Next.js site to a public URL with Vercel."
-  },
-]
+  }
+];
 
 export function Link() {
   return (
@@ -33,8 +33,8 @@ export function Link() {
               <h2 className={classes.title}>{item.title}</h2>
               <p className={classes.description}>{item.description}</p>
             </a>
-            );
-          })};
+            )
+          })}
     </div>
   )
 }
