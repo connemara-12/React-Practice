@@ -1,4 +1,4 @@
-import classes from 'src/Component/Link/Link.module.css'
+import classes from 'src/Component/Links/Links.module.css'
 
 const ITEMS = [
   {
@@ -23,7 +23,7 @@ const ITEMS = [
   }
 ];
 
-export function Link() {
+export function Links() {
   return (
     
     <div className={classes.grid}>
