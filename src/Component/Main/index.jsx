@@ -1,6 +1,6 @@
-import {Headline} from '../Component/Headline'
-import { Link } from '../Component/Link'
-import classes  from './Main.module.css'
+import {Headline} from 'src/Component/Headline'
+import { Link } from 'src/Component/Link'
+import classes  from 'src/Component/Main/Main.module.css'
 
 export function Mian(props) {
   return (
