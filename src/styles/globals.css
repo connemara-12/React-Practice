@@ -16,6 +16,10 @@ input {
   display: block;
   margin: 10px auto;
 }
+
+li {
+  list-style-position: inside;
+}
 a {
   color: inherit;
   text-decoration: none;
