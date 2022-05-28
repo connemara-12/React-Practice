@@ -7,6 +7,15 @@ body {
   text-align: center;
 }
 
+button {
+  display: block;
+  margin: 10px auto;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+}
 a {
   color: inherit;
   text-decoration: none;
