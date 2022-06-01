@@ -27,7 +27,7 @@ const ITEMS = [
   },
 ];
 
-export function Mian(props) {
+export const Mian = (props) => {
   const [items, setItems] = useState(ITEMS);
   const handleReduce = useCallback(() => {
     setItems((prevItems) => {
@@ -42,4 +42,4 @@ export function Mian(props) {
       <Links items={items} />
     </main>
   );
-}
+};

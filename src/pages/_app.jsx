@@ -4,7 +4,7 @@ import { useCounter } from "src/hooks/useCounter";
 import { useInputarray } from "src/hooks/useInputarray";
 import { useBgColor } from "src/hooks/useBgColor";
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   const counter = useCounter();
   const inputarray = useInputarray();
   useBgColor();
@@ -18,6 +18,6 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} {...counter} {...inputarray} />
     </>
   );
-}
+};
 
 export default MyApp;
