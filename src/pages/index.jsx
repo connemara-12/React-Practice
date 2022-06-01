@@ -1,8 +1,8 @@
 import Head from "next/head";
 import styles from "src/styles/Home.module.css";
-import { Footer } from "src/Component/Footer";
-import { Header } from "src/Component/Header";
-import { Mian } from "src/Component/Main";
+import { Footer } from "src/components/Footer";
+import { Header } from "src/components/Header";
+import { Mian } from "src/components/Main";
 
 export default function Home(props) {
   const {

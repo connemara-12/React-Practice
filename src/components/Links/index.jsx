@@ -1,4 +1,4 @@
-import classes from "src/Component/Links/Links.module.css";
+import classes from "src/components/Links/Links.module.css";
 
 export function Links({ items }) {
   return (

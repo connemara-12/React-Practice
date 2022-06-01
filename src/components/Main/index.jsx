@@ -1,7 +1,7 @@
-import { Headline } from "src/Component/Headline";
-import { Links } from "src/Component/Links";
+import { Headline } from "src/components/Headline";
+import { Links } from "src/components/Links";
 import { useState, useCallback } from "react";
-import classes from "src/Component/Main/Main.module.css";
+import classes from "src/components/Main/Main.module.css";
 
 const ITEMS = [
   {
