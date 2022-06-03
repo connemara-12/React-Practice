@@ -1,5 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "prettier", "eslint:recommended"],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "some-other-config-you-use",
+    "prettier"
+  ],
 
   "rules": {
     "semi": ["error", "always"],
