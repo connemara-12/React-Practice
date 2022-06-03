@@ -1,39 +1,21 @@
-import { useEffect, useCallback, useState } from "react";
+import { usePosts } from "src/hooks/usePost";
 
 export const Posts = () => {
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const getPosts = useCallback(async () => {
-    try {
-      const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-      if (!res.ok) {
-        throw new Error("エラーが発生したため、データの取得に失敗しました");
-      }
-      const json = await res.json();
-      setPosts(json);
-    } catch (error) {
-      setError(error);
-    }
-    setLoading(false);
-  }, []);
-  useEffect(() => {
-    getPosts();
-  }, [getPosts]);
-  console.log(posts);
-  if (loading) {
-    <div>ローディング中です</div>;
+  const { data, error, isLoading, isEmpty } = usePosts();
+
+  if (isLoading) {
+    return <div>ローディング中です</div>;
   }
   if (error) {
-    <div>{error.message}</div>;
+    return <div>{error.message}</div>;
   }
-  if (posts.length === 0) {
-    <div> データは空です</div>;
+  if (isEmpty) {
+    return <div> データは空です</div>;
   }
 
   return (
     <ol>
-      {posts.map((post) => {
+      {data.map((post) => {
         return <li key={post.id}>{post.title}</li>;
       })}
     </ol>
