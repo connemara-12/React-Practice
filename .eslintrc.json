@@ -2,7 +2,7 @@
   "extends": [
     "next/core-web-vitals",
     "eslint:recommended",
-    "some-other-config-you-use",
+    // "some-other-config-you-use",
     "prettier"
   ],
 
