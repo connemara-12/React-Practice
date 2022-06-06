@@ -7,16 +7,6 @@ body {
   /* text-align: center; */
 }
 
-button {
-  display: block;
-  margin: 10px auto;
-}
-
-input {
-  display: block;
-  margin: 10px auto;
-}
-
 li {
   list-style-position: inside;
 }
