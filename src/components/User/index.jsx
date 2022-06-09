@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { PostsByUserId } from "src/components/Posts/PostsByUserId";
 import { useUser } from "src/hooks/useUser";
 
 export const User = () => {
@@ -17,6 +18,7 @@ export const User = () => {
         <title>{data.name}</title>
       </Head>
       <h1>{data.name}</h1>
+      <h2>詳細</h2>
       <ul>
         <li>{data.email}</li>
         <li>{data.username}</li>
@@ -25,6 +27,9 @@ export const User = () => {
         <li>{data.website}</li>
         <li>{data.company.name}</li>
       </ul>
+      <h2>投稿</h2>
+      <PostsByUserId id={data.id} />
+      <h2>コメント</h2>
     </div>
   );
 };
